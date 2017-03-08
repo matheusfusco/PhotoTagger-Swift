@@ -13,7 +13,6 @@
         <!--Navigation Controller-->
         <scene sceneID="zBf-C2-PPV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2mC-LH-VU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="gLb-Lf-R3W" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ff8-vH-ZyU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -23,6 +22,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GaG-7U-SrC"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mC-LH-VU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1655" y="-183"/>
         </scene>
@@ -45,10 +45,10 @@
                                     <action selector="takePictureButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4wM-UU-93N"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vil-Y9-JWb">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="vil-Y9-JWb">
                                 <rect key="frame" x="177" y="579" width="20" height="20"/>
                             </activityIndicatorView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-oe-0mv">
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dMz-oe-0mv">
                                 <rect key="frame" x="16" y="607" width="343" height="2"/>
                             </progressView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N88-BV-yAS">

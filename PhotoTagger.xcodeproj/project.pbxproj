@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53CF42610838048686A29781 /* Pods_PhotoTagger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941F3BE1329D25DDB62B1AC9 /* Pods_PhotoTagger.framework */; };
 		5E4E4ECF1E6F23EF00BA5F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E4ECE1E6F23EF00BA5F7B /* AppDelegate.swift */; };
 		5E4E4ED41E6F23EF00BA5F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E4ED21E6F23EF00BA5F7B /* Main.storyboard */; };
 		5E4E4ED61E6F23EF00BA5F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E4ED51E6F23EF00BA5F7B /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16F79FD1D3A6582427449DE5 /* Pods-PhotoTagger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoTagger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoTagger/Pods-PhotoTagger.debug.xcconfig"; sourceTree = "<group>"; };
 		5E4E4ECB1E6F23EF00BA5F7B /* PhotoTagger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTagger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4E4ECE1E6F23EF00BA5F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E4E4ED31E6F23EF00BA5F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		5E4E4EEC1E6F2BE600BA5F7B /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		5E4E4EEF1E6F2F2400BA5F7B /* TagOrColorTableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagOrColorTableData.swift; sourceTree = "<group>"; };
 		5E4E4EF11E6F2F4D00BA5F7B /* TagOrColorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagOrColorTableViewController.swift; sourceTree = "<group>"; };
+		772D8F9BDD6BA52EA6B85749 /* Pods-PhotoTagger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoTagger.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoTagger/Pods-PhotoTagger.release.xcconfig"; sourceTree = "<group>"; };
+		941F3BE1329D25DDB62B1AC9 /* Pods_PhotoTagger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoTagger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53CF42610838048686A29781 /* Pods_PhotoTagger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DEFADFB9EC3EEA6A7F5F4BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				941F3BE1329D25DDB62B1AC9 /* Pods_PhotoTagger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E4E4EC21E6F23EF00BA5F7B = {
 			isa = PBXGroup;
 			children = (
 				5E4E4ECD1E6F23EF00BA5F7B /* PhotoTagger */,
 				5E4E4ECC1E6F23EF00BA5F7B /* Products */,
+				9E8FBBAE96422960EB14FF7D /* Pods */,
+				1DEFADFB9EC3EEA6A7F5F4BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,11 +100,20 @@
 		5E4E4EE91E6F2B8E00BA5F7B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5E4E4EEC1E6F2BE600BA5F7B /* ResultsViewController.swift */,
 				5E4E4EEA1E6F2BD800BA5F7B /* PhotoTaggerViewController.swift */,
+				5E4E4EEC1E6F2BE600BA5F7B /* ResultsViewController.swift */,
 				5E4E4EF11E6F2F4D00BA5F7B /* TagOrColorTableViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9E8FBBAE96422960EB14FF7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16F79FD1D3A6582427449DE5 /* Pods-PhotoTagger.debug.xcconfig */,
+				772D8F9BDD6BA52EA6B85749 /* Pods-PhotoTagger.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E4E4EDD1E6F23EF00BA5F7B /* Build configuration list for PBXNativeTarget "PhotoTagger" */;
 			buildPhases = (
+				A8AF570E837CC57FB7110BD2 /* [CP] Check Pods Manifest.lock */,
 				5E4E4EC71E6F23EF00BA5F7B /* Sources */,
 				5E4E4EC81E6F23EF00BA5F7B /* Frameworks */,
 				5E4E4EC91E6F23EF00BA5F7B /* Resources */,
+				70583F3537E9C76075BF862B /* [CP] Embed Pods Frameworks */,
+				F4C180A317ADAAB66605C59E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +152,7 @@
 					5E4E4ECA1E6F23EF00BA5F7B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = D67XBEEN3L;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -159,6 +187,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70583F3537E9C76075BF862B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoTagger/Pods-PhotoTagger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8AF570E837CC57FB7110BD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4C180A317ADAAB66605C59E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoTagger/Pods-PhotoTagger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E4E4EC71E6F23EF00BA5F7B /* Sources */ = {
@@ -289,6 +365,7 @@
 		};
 		5E4E4EDE1E6F23EF00BA5F7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F79FD1D3A6582427449DE5 /* Pods-PhotoTagger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D67XBEEN3L;
@@ -302,6 +379,7 @@
 		};
 		5E4E4EDF1E6F23EF00BA5F7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772D8F9BDD6BA52EA6B85749 /* Pods-PhotoTagger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D67XBEEN3L;
@@ -332,6 +410,7 @@
 				5E4E4EDF1E6F23EF00BA5F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
